@@ -22,7 +22,7 @@ def main():
         input("Press enter to reveal the song info")
         mixer.stop()
         # Song file name must be formatted "[Title]-[People/Form]-[Composer/Country]-[Category].flac"
-        song_info = next_song.split("-")
+        song_info = next_song.split("/")[1].split(".")[0].split("-")
         print("\n\tTitle: " + song_info[0] + 
               "\n\tPeople/Form: " + song_info[1] +
               "\n\tComposer/Country: " + song_info[2] +
